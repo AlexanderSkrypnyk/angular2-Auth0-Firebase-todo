@@ -14,4 +14,4 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/take';
 
 // AngularFire2
-import 'angularfire2';
+// import 'angularfire2';

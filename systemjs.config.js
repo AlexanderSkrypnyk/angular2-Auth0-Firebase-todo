@@ -14,8 +14,8 @@
     // 'angularfire2':               'node_modules/angularfire2',
     // 'firebase':                   'node_modules/firebase.js',
     // 'browser':                    'node_modules/@angular/platform-browser/src',
-    // polyfills: 'src/polyfills.ts',
-    // vendor: 'src/vendor.ts'
+    // polyfills:                     'src',
+    vendor:                        'src'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -26,8 +26,8 @@
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
     // 'angularfire2':               { defaultExtension: 'js' },
     // 'browser':                    { defaultExtension: 'js' },
-    // 'polyfills':               { defaultExtension: 'ts' },
-    // 'vendor':                    { defaultExtension: 'ts' }
+    // 'polyfills':                  { main: 'polyfills.js', defaultExtension: 'js' },
+    'vendor':                     { main: 'vendor.js', defaultExtension: 'js' }
   };
 
   var ngPackageNames = [
@@ -42,7 +42,7 @@
     'router-deprecated',
     'upgrade',
     // 'polyfills',
-    // 'vendor'
+    'vendor'
   ];
 
   // Individual files (~300 requests):
