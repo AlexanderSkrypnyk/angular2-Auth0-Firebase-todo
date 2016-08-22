@@ -10,7 +10,6 @@ import {Auth}      from './auth.service';
             <ul>
                 <li *ngFor="let user of listUsers">
                     {{user}}
-                    
                 </li>
             </ul>
         </div>
