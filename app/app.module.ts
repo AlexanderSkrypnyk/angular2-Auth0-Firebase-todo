@@ -1,8 +1,7 @@
 // import { DeprecatedFormsModule }                  from '@angular/common';
 import { NgModule }                               from '@angular/core';
 import { BrowserModule }                          from '@angular/platform-browser';
-// import { FirebaseModule }                         from '../firebase';
-
+import { FirebaseModule }                         from '../firebase.config';
 import { APP_ROUTER_PROVIDERS }                   from './app.routes';
 import { AUTH_PROVIDERS }                         from 'angular2-jwt';
 import { AppComponent }                           from './app.component';
@@ -17,7 +16,8 @@ import { AppComponent }                           from './app.component';
     imports: [
         BrowserModule,
         // DeprecatedFormsModule,
-        // FirebaseModule
+        FirebaseModule,
+        // firebase.config
     ],
     providers: [
         APP_ROUTER_PROVIDERS,
