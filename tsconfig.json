@@ -8,7 +8,6 @@
       "node"
     ],
     "module": "commonjs",
-    "noEmitHelpers": true,
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

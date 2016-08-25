@@ -6,9 +6,8 @@ import { Auth }              from './auth.service';
     selector: 'my-app',
     providers: [ Auth ],
     directives: [ ROUTER_DIRECTIVES ],
-    templateUrl: './app.template.html'
+    templateUrl: `app/app.template.html`
 })
-
 export class AppComponent {
   constructor(private auth: Auth) {}
 };
