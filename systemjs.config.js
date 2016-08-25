@@ -13,10 +13,7 @@
     'rxjs':                       'node_modules/rxjs',
     'angularfire2':               'node_modules/angularfire2',
     'firebase.config':            './firebase.config',
-    'firebase':            'node_modules/firebase',
-    // 'browser':                    'node_modules/@angular/platform-browser/src',
-    // polyfills:                     'src',
-    // vendor:                        'src'
+    'firebase':                   'node_modules/firebase',
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -27,10 +24,7 @@
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
     'angularfire2':               { main: 'angularfire2.js', defaultExtension: 'js' },
     'firebase.config':            { main: 'index.js', defaultExtension: 'js' },
-    'firebase':                   { main: 'firebase.js', defaultExtension: 'js' }
-    // 'browser':                    { defaultExtension: 'js' },
-    // 'polyfills':                  { main: 'polyfills.js', defaultExtension: 'js' },
-    // 'vendor':                     { main: 'vendor.js', defaultExtension: 'js' }
+    'firebase':                   { main: 'firebase.js', defaultExtension: 'js' },
   };
 
   var ngPackageNames = [
@@ -44,7 +38,6 @@
     'router',
     'router-deprecated',
     'upgrade',
-    // 'firebase.config',
     'vendor'
   ];
 

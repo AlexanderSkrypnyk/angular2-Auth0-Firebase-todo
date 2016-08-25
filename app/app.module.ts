@@ -1,4 +1,3 @@
-// import { DeprecatedFormsModule }                  from '@angular/common';
 import { NgModule }                               from '@angular/core';
 import { BrowserModule }                          from '@angular/platform-browser';
 import { FirebaseModule }                         from '../firebase.config';
@@ -15,9 +14,7 @@ import { AppComponent }                           from './app.component';
     ],
     imports: [
         BrowserModule,
-        // DeprecatedFormsModule,
-        FirebaseModule,
-        // firebase.config
+        FirebaseModule
     ],
     providers: [
         APP_ROUTER_PROVIDERS,
