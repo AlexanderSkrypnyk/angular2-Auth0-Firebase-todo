@@ -9,7 +9,7 @@ import { FirebaseModule } from '../firebase.config';
     template: `
       <h4 *ngIf="auth.authenticated()">You are logged in</h4>
       <h4 *ngIf="!auth.authenticated()">You are not logged in, please click 'Log in' button to login</h4>
-      <div *ngIf="auth.authenticated()"><h4>Users list:</h4>
+      <div *ngIf="auth.authenticated()">
           <ul>
               <li *ngFor="let user of listUsers">
                   <a href="#task" (click)="getTaskList(user.id)">{{user.name}}</a>
@@ -42,14 +42,13 @@ export class HomeComponent {
     chosenUserId: string = '';
 
     constructor(private auth: Auth, private angularfire: AngularFire) {
-        angularfire.database.list('/users').subscribe(users => {
-            this.listUsers = users;
+        angularfire.database.list('/tasks').subscribe(users => {
+            this.listTasks = users;
         });
     }
 
     getTaskList(userId: string) {
         this.angularfire.database.list('/tasks').subscribe(tasks => {
-            this.listTasks = [];
             this.chosenUserId = userId;
             tasks.forEach(task => {
                 if (task.user_id === userId) {
@@ -64,7 +63,5 @@ export class HomeComponent {
             title: task,
             user_id: this.chosenUserId
         });
-        this.getTaskList(this.chosenUserId);
     }
-
 }
